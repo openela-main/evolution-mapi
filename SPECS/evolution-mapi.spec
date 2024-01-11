@@ -7,7 +7,7 @@
 
 Name: evolution-mapi
 Version: 3.28.3
-Release: 7%{?dist}
+Release: 8%{?dist}
 Group: Applications/Productivity
 Summary: Evolution extension for MS Exchange 2007 servers
 License: LGPLv2+
@@ -120,6 +120,9 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %files langpacks -f _build/%{name}.lang
 
 %changelog
+* Wed May 31 2023 Milan Crha <mcrha@redhat.com> - 3.28.3-8
+- Related: #2190417 - Rebuild for samba rebase to 4.18.x
+
 * Thu Oct 27 2022 Milan Crha <mcrha@redhat.com> - 3.28.3-7
 - Related: #2132051 - Rebuild for samba rebase to 4.17.x
 
