@@ -9,7 +9,7 @@
 
 Name: evolution-mapi
 Version: 3.40.1
-Release: 5%{?dist}
+Release: 6%{?dist}
 Summary: Evolution extension for MS Exchange 2007 servers
 License: LGPLv2+
 URL: https://wiki.gnome.org/Apps/Evolution
@@ -110,6 +110,9 @@ export CFLAGS="$CFLAGS -Wno-deprecated-declarations"
 %files langpacks -f %{name}.lang
 
 %changelog
+* Wed May 31 2023 Milan Crha <mcrha@redhat.com> - 3.40.1-6
+- Related: #2190415 (Rebuild against samba 4.18)
+
 * Thu Oct 27 2022 Milan Crha <mcrha@redhat.com> - 3.40.1-5
 - Related: #2131993 (Rebuild against samba 4.17)
 
