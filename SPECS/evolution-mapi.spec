@@ -1,6 +1,6 @@
 %undefine __cmake_in_source_build
 
-%define openchange_version 2.0
+%define openchange_version 2.3-46
 %define intltool_version 0.35.5
 
 %define strict_build_settings 0
@@ -9,7 +9,7 @@
 
 Name: evolution-mapi
 Version: 3.40.1
-Release: 10%{?dist}
+Release: 11%{?dist}
 Summary: Evolution extension for MS Exchange 2007 servers
 License: LGPLv2+
 URL: https://wiki.gnome.org/Apps/Evolution
@@ -110,6 +110,9 @@ export CFLAGS="$CFLAGS -Wno-deprecated-declarations"
 %files langpacks -f %{name}.lang
 
 %changelog
+* Mon Jun 01 2026 Milan Crha <mcrha@redhat.com> - 3.40.1-11
+- Related: RHEL-175124 (Rebuild against samba 4.24)
+
 * Mon Sep 15 2025 Milan Crha <mcrha@redhat.com> - 3.40.1-10
 - Related: RHEL-114548 (Rebuild against samba 4.23)
 
